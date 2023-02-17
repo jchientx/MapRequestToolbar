@@ -1,0 +1,54 @@
+﻿<ArcGIS defaultAssembly="MapRequestToolbar.dll" defaultNamespace="MapRequestToolbar" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{d83b88b3-6727-4b2c-9e76-1b536c00d197}" version="1.0" desktopVersion="2.6.24783">
+    <Name>MapRequestToolbar</Name>
+    <Description>Tool allows users to acquire map templates, add map request number, download a standard folder structure, and if there is a pre-existing project, it will download that folder as well.</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>TPP-DM Joyce Chien</Author>
+    <Company>TxDOT TPP-Data Management</Company>
+    <Date>9/29/2020 1:49:32 PM, 2020</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="MapRequestToolbar_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="MapRequestToolbar_Tab1" caption="Map Requests">
+          <group refID="MapRequestToolbar_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="MapRequestToolbar_Group1" caption="The Way (to Map)" appearsOnAddInTab="false">
+          <!--host controls within groups-->
+          <button refID="MapRequestToolbar_GetTemplateButton" size="large" />
+          <button refID="MapRequestToolbar_UploadProjectFilesButton" size="large" />
+          <button refID="MapRequestToolbar_UploadMapToAGOButton" size="large" />
+          <button refID="MapRequestToolbar_Dockpane1_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="MapRequestToolbar_GetTemplateButton" caption="Download Templates" className="GetTemplateButton" loadOnClick="true" smallImage="Images\Way_to_Map_sunset.png" largeImage="Images\Way_to_Map_sunset.png">
+          <tooltip heading="Download Templates">Downloads choice of map templates with Map ID#, creates organized folder structure, and option to download past related projects<disabledText /></tooltip>
+        </button>
+        <button id="MapRequestToolbar_UploadProjectFilesButton" caption="Upload to T-Drive" className="UploadProjectFilesButton" loadOnClick="true" smallImage="Images\Helmet_Upload_no_text.png" largeImage="Images\Helmet_Upload_no_text.png">
+          <tooltip heading="Upload Project">Point tool at Uploads folder to copy contents to new folder named with Map ID# _Project Name in Map Requests folder on T Drive<disabledText /></tooltip>
+        </button>
+        <button id="MapRequestToolbar_UploadMapToAGOButton" caption="Upload To AGO" className="UploadMapToAGOButton" loadOnClick="true" smallImage="Images\AGO_DA_has_transparency_1st_Option.png" largeImage="Images\AGO_DA_has_transparency_1st_Option.png">
+          <tooltip heading="Upload to AGO">Uploads map (.pdf, .png, or .jpg) selected to personal content, option to add tags, and shares with AGO Map Gallery it does<disabledText /></tooltip>
+        </button>
+        <!--<button id="MapRequestToolbar_Dockpane1_ShowButton" caption="Launch Dockpane" className="Dockpane1_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+          <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
+        </button>-->
+      </controls>
+      <dockPanes>
+        <dockPane id="MapRequestToolbar_Dockpane1" caption="Dockpane 1" className="Dockpane1ViewModel" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="Dockpane1View" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>
