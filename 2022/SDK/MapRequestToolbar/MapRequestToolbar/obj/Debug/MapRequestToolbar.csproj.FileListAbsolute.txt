@@ -1,0 +1,11 @@
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\bin\Debug\MapRequestToolbar.dll
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\bin\Debug\MapRequestToolbar.pdb
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\Dockpane1.g.cs
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar_MarkupCompile.cache
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar_MarkupCompile.lref
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\Dockpane1.baml
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar.g.resources
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar.csproj.CoreCompileInputs.cache
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar.dll
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar.pdb
+C:\TxDOT\Map Requests\_Toolbox\2022\SDK\MapRequestToolbar\MapRequestToolbar\obj\Debug\MapRequestToolbar.csproj.AssemblyReference.cache
